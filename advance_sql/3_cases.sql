@@ -1,7 +1,7 @@
 /* 
 Label new column as follows based on job_location:
 - 'Anywhere' jobs as 'Remote'
-- 'Kuala Lumpur' jobs as  'Local'
+- 'Kuala Lumpur' jobs as 'Local'
 - Otherwise 'Onsite'
 */
 
@@ -19,4 +19,21 @@ WHERE
 GROUP BY
     location_category
 ORDER BY    
-    number_of_jobs DESC;
+    number_of_jobs DESC
+
+/*
+[
+  {
+    "number_of_jobs": "181835",
+    "location_category": "Onsite"
+  },
+  {
+    "number_of_jobs": "13331",
+    "location_category": "Remote"
+  },
+  {
+    "number_of_jobs": "1427",
+    "location_category": "Local"
+  }
+]
+*/

@@ -1,5 +1,5 @@
 /*
-Find the count of the number of remote job postings per skill
+Find the count of the number of remote job postings per skill in Malaysia
     - Display the top 5 skills by their demand in remote jobs
     - Include skill ID, name, and count of postings requiring the skill
 */
@@ -13,7 +13,9 @@ WITH remote_job_skills AS (
     INNER JOIN job_postings_fact AS job_postings ON job_postings.job_id = skills_to_job.job_id
     WHERE
         job_postings.job_work_from_home = True AND
-        job_postings.job_title_short = 'Data Analyst'
+        job_postings.job_title_short = 'Data Analyst' AND
+        job_postings.job_country = 'Malaysia'
+        
     GROUP BY
         skill_id
 )
@@ -27,3 +29,33 @@ INNER JOIN skills_dim AS skills ON skills.skill_id = remote_job_skills.skill_id
 ORDER BY
     skill_count DESC
 LIMIT 5;
+
+/*
+[
+  {
+    "skill_id": 0,
+    "skill_name": "sql",
+    "skill_count": "13"
+  },
+  {
+    "skill_id": 182,
+    "skill_name": "tableau",
+    "skill_count": "13"
+  },
+  {
+    "skill_id": 183,
+    "skill_name": "power bi",
+    "skill_count": "12"
+  },
+  {
+    "skill_id": 1,
+    "skill_name": "python",
+    "skill_count": "11"
+  },
+  {
+    "skill_id": 181,
+    "skill_name": "excel",
+    "skill_count": "9"
+  }
+]
+*/
