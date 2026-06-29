@@ -160,7 +160,7 @@ Here's a breakdown of the results for top paying skills for Data Analysts:
 - **Cloud Computing Expertise:** Familiarity with cloud and data engineering tools (**Elasticsearch**, **Databricks**, **GCP**) underscores the growing importance of cloud-based analytics environments, suggesting that cloud proficiency significantly boosts earning potential in data analytics.
 
 | Skill | Average Annual Salary (USD) |
-|----------------|---------------------------|
+|----------------|-----------------------:|
 | PySpark | $208,172 |
 | Bitbucket | $189,155 |
 | Watson | $160,515 |
@@ -177,7 +177,7 @@ Here's a breakdown of the results for top paying skills for Data Analysts:
 Combining insights from demand and salary data, this query aimed to pinpoint skills that are both in high demand and have high salaries, offering a strategic focus for skill development.
 
 | Skill | Demand Count | Average Annual Salary (USD) |
-|--------|----------|--------------------|
+|--------|----------|--------------------:|
 | Go | 27 | $115,320 |
 | Confluence | 11 | $114,210 |
 | Hadoop | 22 | $113,193 |
