@@ -31,16 +31,30 @@ FROM top_paying_jobs
 INNER JOIN skills_job_dim ON top_paying_jobs.job_id = skills_job_dim.job_id
 INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY
-    salary_year_avg DESC;
+    salary_year_avg DESC
 
 /*
 Here's the breakdown of the most demanded skills for data analysts in Malaysia for Year 2023, based on job postings:
-SQL, Excel, Python & Tableau have same bold count of 5.
-Looker follows closely with a bold count of 3.
+SQL, Python & Tableau have same bold count of 5.
+Excel follows closely with a bold count of 4, followed by Looker with 3 occurrences.
 R & Flow are also highly sought after, with a bold count of 2.
-Other skills like SPSS, Spark, SAP, PHP, Perl, BigQuery and Azure show varying degrees of demand.
+Other skills like SPSS, Spark, Power BI, PHP, Perl, BigQuery, Oracle and Azure show varying degrees of demand.
 
 [
+  {
+    "job_id": 314864,
+    "job_title": "Senior / Executive Business Analyst (Data Analyst)",
+    "salary_year_avg": "111175.0",
+    "company_name": "Bosch Group",
+    "skills": "spark"
+  },
+  {
+    "job_id": 314864,
+    "job_title": "Senior / Executive Business Analyst (Data Analyst)",
+    "salary_year_avg": "111175.0",
+    "company_name": "Bosch Group",
+    "skills": "excel"
+  },
   {
     "job_id": 402386,
     "job_title": "Cloud Data Analyst Engineer (FinOps)",
@@ -89,20 +103,6 @@ Other skills like SPSS, Spark, SAP, PHP, Perl, BigQuery and Azure show varying d
     "salary_year_avg": "111175.0",
     "company_name": "Mindvalley",
     "skills": "looker"
-  },
-  {
-    "job_id": 314864,
-    "job_title": "Senior / Executive Business Analyst (Data Analyst)",
-    "salary_year_avg": "111175.0",
-    "company_name": "Bosch Group",
-    "skills": "spark"
-  },
-  {
-    "job_id": 314864,
-    "job_title": "Senior / Executive Business Analyst (Data Analyst)",
-    "salary_year_avg": "111175.0",
-    "company_name": "Bosch Group",
-    "skills": "excel"
   },
   {
     "job_id": 1260972,
