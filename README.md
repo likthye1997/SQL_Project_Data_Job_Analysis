@@ -126,7 +126,7 @@ Here's the breakdown of the most demanded skills for data analysts in Malaysia f
 Programming and Visualization Tools like **Python**, **Tableau**, and **Power BI** are essential, pointing towards the increasing importance of technical skills in data storytelling and decision support.
 
 | Skill     | Demand Count |
-|-----------|--------------|
+|-----------|-------------:|
 | SQL       | 1,092        |
 | Excel     | 1,023        |
 | Python    | 736          |
